@@ -23,18 +23,18 @@
 
                   <!-- EMAIL -->
                   <div data-mdb-input-init class="form-outline mb-4">
-                      <span class="text-danger">*</span>이메일주소</label>
-                      <x-text-input type="email" id="email" class="form-control form-control-lg" name="email" :value="old('email')" required placeholder="이메일주소" />
+                      <span class="text-danger">*</span>이메일주소 (네이버로!)</label>
+                      <x-text-input type="email" id="email" class="form-control form-control-lg" name="email" :value="old('email')" required placeholder="jin03192@naver.com" />
                       <label class="form-label" for="email" :value="__('Email')">
                       <x-input-error :messages="$errors->get('email')" class="text-danger fw-bold" />
                   </div>
                   
                   <!-- NAME -->
                   <div data-mdb-input-init class="form-outline mb-4">
-                      <span class="text-danger">*</span>닉네임</label>
-                      <x-text-input type="text" id="name" class="form-control form-control-lg" name="name" :value="old('name')" required autofocus placeholder="닉네임" />
-                      <label class="form-label" for="name" :value="__('Name')">
-                      <x-input-error :messages="$errors->get('name')" class="text-danger fw-bold" />
+                      <span class="text-danger">*</span>배틀넷 아이디</label>
+                      <x-text-input type="text" id="starcraft_name" class="form-control form-control-lg" name="starcraft_name" :value="old('starcraft_name')" required autofocus placeholder="3040-Zombie" />
+                      <label class="form-label" for="starcraft_name" :value="__('starcraft_name')">
+                      <x-input-error :messages="$errors->get('starcraft_name')" class="text-danger fw-bold" />
                   </div>
                   
                   <!-- PASSWORD -->
