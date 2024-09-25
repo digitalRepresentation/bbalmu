@@ -1,0 +1,6 @@
+@media (min-width: 992px) {
+    .custom-table {
+        width: 75%;
+        margin: auto;
+    }
+}

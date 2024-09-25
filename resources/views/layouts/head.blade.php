@@ -2,7 +2,10 @@
     <title>@yield('title', '스타크래프트 빨무 커뮤니티 - 3040 CLAN')</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
-    <meta name="description" content="@yield('description', '스타크래프트 빠른무한 빨무 1등 클랜 3040입니다. 내전, 공방, 각종 대회, 빨무 공략 등을 알려드리고 있습니다.')">
+    <meta name="description" content="@yield('description', '스타크래프트 빠른무한 빨무 아재 3040 클랜입니다. 내전, 공방, 각종 대회, 빨무 공략 등을 알려드리고 있습니다.')">
+
+    <!-- 파비콘 링크 추가 -->
+    <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +27,7 @@
 
     <!-- Template Stylesheet -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/common.css') }}" rel="stylesheet">
 
     @yield('css-file')
     @yield('js-file')
