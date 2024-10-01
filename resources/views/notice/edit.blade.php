@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 @include('layouts.head')
+<x-head.tinymce-config/>
 </head>
 <body>
 @include('layouts.header')
@@ -25,10 +26,11 @@
         <label for="title" class="form-label">제목</label>
         <input type="text" class="form-control" name="title" value="{{ old('title', $notice->title) }}">
       </div>
-      <div class="mb-3">
-        <label for="content" class="form-label">내용</label>
-        <textarea class="form-control" name="content" rows="30">{{ old('content', $notice->content) }}</textarea>
-      </div>
+      <x-forms.tinymce-editor>
+        @section('tinymce-content')
+        {{ old('content', $notice->content) }}
+        @endsection
+      </x-forms.tinymce-editor>
 
       @can('notice')
       <input type="submit" class="btn btn-secondary float-end" value="작성하기" />

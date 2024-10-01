@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('notice_boards', function (Blueprint $table) {
             $table->id();
             $table->string('title');
+            $table->string('main_image')->nullable();
             $table->text('content');
             $table->unsignedBigInteger('writer_id');
             $table->integer('views')->default(0);

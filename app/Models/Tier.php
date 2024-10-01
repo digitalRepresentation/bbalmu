@@ -15,4 +15,8 @@ class Tier extends Model
     {
         return $this->belongsTo(MasterTier::class, 'tier', 'id');
     }
+    public function MatchScoreRecord() 
+    {
+        return $this->belongsTo(MatchScoreRecord::class, 'id', 'starcraft_id');
+    }
 }

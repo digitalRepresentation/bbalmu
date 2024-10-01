@@ -35,6 +35,7 @@ class MasterDatabaseSeeder extends Seeder
 
         // 권한 생성 또는 기존 권한 가져오기
         $notice = Permission::firstOrCreate(['name' => 'notice']);
+        $ladder = Permission::firstOrCreate(['name' => 'ladder']);
         // $createPosts = Permission::firstOrCreate(['name' => 'create posts']);
         // $editPosts = Permission::firstOrCreate(['name' => 'edit posts']);
         // $deletePosts = Permission::firstOrCreate(['name' => 'delete posts']);
@@ -46,6 +47,10 @@ class MasterDatabaseSeeder extends Seeder
         // $regularMember->givePermissionTo([$viewPosts, $createPosts]);
         $staff->givePermissionTo($notice);
         $serverAdmin->givePermissionTo($notice);
+
+        $juniorMember->givePermissionTo($ladder);
+        $staff->givePermissionTo($ladder);
+        $serverAdmin->givePermissionTo($ladder);
 
         // 유저에게 역할 할당
         $zombie->assignRole($regularMember);

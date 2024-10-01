@@ -112,6 +112,7 @@ return [
     'attributes' => [
         'title' => '제목',
         'content' => '본문',
+        'match_date' => '매치일',
         'tags' => '태그',
         'files' => '파일',
         'files.*' => '파일',

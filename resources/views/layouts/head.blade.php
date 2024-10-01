@@ -1,7 +1,7 @@
     <meta charset="utf-8">
     <title>@yield('title', '스타크래프트 빨무 커뮤니티 - 3040 CLAN')</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
+    <meta content="스타크래프트 길드, 스타크래프트 클랜, 스타크래프트 빨무, 빠른무한, 빨무고수, 브신, 인피쉰, 내전, 감독전, 청백전" name="keywords">
     <meta name="description" content="@yield('description', '스타크래프트 빠른무한 빨무 아재 3040 클랜입니다. 내전, 공방, 각종 대회, 빨무 공략 등을 알려드리고 있습니다.')">
 
     <!-- 파비콘 링크 추가 -->

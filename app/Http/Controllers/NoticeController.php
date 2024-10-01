@@ -16,8 +16,7 @@ class NoticeController extends Controller
      */
     public function index()
     {
-        $notices = NoticeBoard::all();
-        
+        $notices = NoticeBoard::orderBy('created_at', 'desc')->paginate(20);
         return view('notice.list', compact('notices'));
     }
 
@@ -46,6 +45,10 @@ class NoticeController extends Controller
 
         $notice = new NoticeBoard();
         $user = Auth::user();
+
+        if ($request->hasFile('main_image')) {
+            $validatedData['main_image'] = $request->file('main_image')->store('images');
+        }
 
         $notice->title = $validatedData['title'];
         $notice->content = $validatedData['content'];
@@ -96,6 +99,9 @@ class NoticeController extends Controller
             'content' => 'required',
         ]);
         
+        if ($request->hasFile('main_image')) {
+            $validatedData['main_image'] = $request->file('main_image')->store('images');
+        }
 
         $notice = NoticeBoard::findOrFail($notice_id);
         $notice->title = $validatedData['title'];

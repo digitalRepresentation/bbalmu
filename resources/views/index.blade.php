@@ -6,7 +6,6 @@
     </head>
 
     <body>
-
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -20,77 +19,49 @@
         <!-- Carousel Start -->
         <div class="header-carousel owl-carousel">
             <div class="header-carousel-item">
-                <img src="img/starcraft_main.jpg" class="img-fluid w-100" alt="Image">
+                <img src="img/top/tier.png" class="img-fluid w-100" alt="Image">
                 <div class="carousel-caption">
                     <div class="container align-items-center py-4">
                         <div class="row g-5 align-items-center">
                             <div class="col-xl-7 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;">
                                 <div class="text-start">
-                                    <h4 class="text-primary text-uppercase fw-bold mb-4">스타크래프트 빨무 3040클랜에 오신 것을 환영합니다.</h4>
-                                    <h1 class="display-4 text-uppercase text-white mb-4">현재 사이트 작업중입니다. 잠시만 기다려주세요.</h1>
-                                    <p class="mb-4 fs-5">스타크래프트 빨무를 배우고 싶으시다면 3040클랜에 가입해보세요!
+                                    <h4 class="text-primary text-uppercase fw-bold mb-4">스타크래프트 빨무 3040-CLAN 티어</h4>
+                                    <h1 class="display-4 text-uppercase text-white mb-4">3040 클랜의 티어 정보</h1>
+                                    <p class="mb-4 fs-5">3040 클랜은 S티어부터 3군까지 다양한 유저들이 포함되어 있습니다. 
+                                        각 티어는 플레이어의 실력과 경험을 반영하여 세심하게 분류되었으며, 
+                                        이를 통해 모든 유저가 자신의 수준에 맞는 경쟁을 즐길 수 있습니다. 
+                                        클랜 내에서의 티어 시스템은 공정한 경쟁 환경을 조성하고, 
+                                        모든 참가자가 자신의 실력을 충분히 발휘할 수 있도록 돕습니다.
                                     </p>
                                     <div class="d-flex flex-shrink-0">
-                                        <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="https://open.kakao.com/o/gkrsSKFd">가입문의</a>
+                                        <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="/tiers">티어정보</a>
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="col-xl-5 fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;">
-                                <div class="ticket-form p-5">
-                                    <h2 class="text-dark text-uppercase mb-4">book your ticket</h2>
-                                    <form>
-                                        <div class="row g-4">
-                                            <div class="col-12">
-                                                <input type="text" class="form-control border-0 py-2" id="name" placeholder="Your Name">
-                                            </div>
-                                            <div class="col-12 col-xl-6">
-                                                <input type="email" class="form-control border-0 py-2" id="email" placeholder="Your Email">
-                                            </div>
-                                            <div class="col-12 col-xl-6">
-                                                <input type="phone" class="form-control border-0 py-2" id="phone" placeholder="Phone">
-                                            </div>
-                                            <div class="col-12">
-                                                <select class="form-select border-0 py-2" aria-label="Default select example">
-                                                    <option selected>Select Packages</option>
-                                                    <option value="1">Family Packages</option>
-                                                    <option value="2">Basic Packages</option>
-                                                    <option value="3">Premium Packages</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-12">
-                                                <input class="form-control border-0 py-2" type="date">
-                                            </div>
-                                            <div class="col-12">
-                                                <input type="number" class="form-control border-0 py-2" id="number" placeholder="Guest">
-                                            </div>
-                                            <div class="col-12">
-                                                <button type="button" class="btn btn-primary w-100 py-2 px-5">Book Now</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>  -->
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- <div class="header-carousel-item">
-                <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="Image">
+            <div class="header-carousel-item">
+                <img src="img/top/elo.png" class="img-fluid w-100" alt="Image">
                 <div class="carousel-caption">
                     <div class="container py-4">
                         <div class="row g-5 align-items-center">
                             <div class="col-xl-7 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;">
                                 <div class="text-start">
-                                    <h4 class="text-primary text-uppercase fw-bold mb-4">Welcome To WaterLand</h4>
-                                    <h1 class="display-4 text-uppercase text-white mb-4">The Greatest Water and Amusement Park</h1>
-                                    <p class="mb-4 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy... 
+                                    <h4 class="text-primary text-uppercase fw-bold mb-4">스타크래프트 빨무 3040-CLAN ELO시스템</h4>
+                                    <h1 class="display-4 text-uppercase text-white mb-4">감독전 및 대회 전적 기록의 종합적 합산</h1>
+                                    <p class="mb-4 fs-5">각 티어 간의 가중치를 세심하게 조정하여, 모든 플레이어가 공정하고 균형 잡힌 점수를 받을 수 있도록 하였습니다. 
+                                        이를 통해 게임의 경쟁력을 높이고, 모든 참가자가 자신의 실력을 충분히 발휘할 수 있는 환경을 조성하였습니다. 
+                                        또한, ELO 시스템을 도입하여 플레이어들의 전적을 체계적으로 관리하고, 보다 정확한 실력 평가가 가능하도록 하였습니다. 
+                                        이러한 노력은 궁극적으로 게임 커뮤니티의 활성화와 지속적인 발전에 기여할 것입니다.
                                     </p>
                                     <div class="d-flex flex-shrink-0">
-                                        <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Our Packages</a>
+                                        <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="/elo/stats">ELO전적</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-5 fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;">
+                            {{-- <div class="col-xl-5 fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;">
                                 <div class="ticket-form p-5">
                                     <h2 class="text-dark text-uppercase mb-4">book your ticket</h2>
                                     <form>
@@ -124,10 +95,10 @@
                                         </div>
                                     </form>
                                 </div>
-                            </div>  
+                            </div>   --}}
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
         <!-- Carousel End -->
@@ -821,7 +792,6 @@
         <!-- Footer End -->
 
         @include('layouts.footer')
-
     </body>
 
 </html>

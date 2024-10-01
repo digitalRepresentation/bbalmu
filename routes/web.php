@@ -5,6 +5,8 @@ use App\Http\Controllers\TermsController;
 use App\Http\Controllers\NoticeController;
 use App\Http\Controllers\TierController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\MatchRecordController;
+use App\Http\Controllers\LadderController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\CheckNoticeOwner;
 use App\Http\Middleware\CheckRole;
@@ -93,13 +95,24 @@ Route::resource('tournament/match-schedule', EventController::class)->only(['ind
 
 
 // 대회일정 로직
-// Route::get('/events', [EventController::class, 'index'])->name('events');
 Route::get('/events', function () {
     return response()->json(Event::all());
 });
 
-// Route::get('/notice', function () {
-//     // 공지사항 페이지
-// })->middleware('can:notice');
+// 래더공지
+Route::get('ladder/notice', function () {
+    return view('ladder.notice');
+});
+
+// 래더기록 신청
+// 미들웨어가 필요한 라우트
+Route::middleware([CheckRole::class . ':admin|juniorMember|regularMember|root'])->group(function () {
+    Route::resource('ladder/match-record', MatchRecordController::class)->only(['create', 'store', 'update', 'edit', 'destroy']);
+});
+// 래더기록
+Route::resource('ladder/match-record', MatchRecordController::class)->only(['index', 'show']);
+// 래더점수
+Route::get('ladder/tiers', [LadderController::class, 'index']);
+
 
 require __DIR__.'/auth.php';

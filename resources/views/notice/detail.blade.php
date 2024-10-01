@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-@include('layouts.head')
+  @section('title', '스타크래프트 빨무 3040 CLAN 공지사항 - ' . $notice->title)
+  @include('layouts.head')
+<x-head.tinymce-config/>
 </head>
 <body>
 @include('layouts.header')
@@ -11,7 +13,7 @@
       <div class="bg-primary text-white p-3"><span class="fs-3">{{ $notice->title }}</span> <span class="float-end">{{ \Carbon\Carbon::parse($notice->created_at)->format('Y-m-d H:i') }}</span></div>
       <div class="p-3">{{ $notice->user->name }} <span class="float-end">조회 수: {{ $notice->views }}</span></div>
       
-      <div class="border-top border-light p-3 bt-5"> {!! nl2br(e($notice->content)) !!} </div>
+      <div class="border-top border-light p-3 bt-5"> {!! $notice->content !!}</div>
 
       
     </div>

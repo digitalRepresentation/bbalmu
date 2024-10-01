@@ -1,0 +1,1 @@
+<textarea id="myeditorinstance" name="content">@yield('tinymce-content')</textarea>

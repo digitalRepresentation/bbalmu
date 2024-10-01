@@ -51,9 +51,18 @@
                                 {{-- <a href="/" class="dropdown-item">대회공지</a> --}}
                                 <a href="/tournament/schedule" class="dropdown-item">대회일정(캘린더)</a>
                                 <a href="/tournament/match-schedule" class="dropdown-item">대회일정(매치신청)</a>
-                                <a href="/" class="dropdown-item">대회신청</a>
+                                <a href="/" class="dropdown-item">대회신청(준비중)</a>
                             </div>
                         </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">좀비래더</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="/ladder/notice" class="dropdown-item">래더공지</a>
+                                <a href="/ladder/match-record" class="dropdown-item">점수기록지</a>
+                                <a href="/ladder/tiers" class="dropdown-item">래더티어</a>
+                            </div>
+                        </div>
+                        
                         {{-- <a href="/" class="nav-item nav-link">개인광고</a> --}}
                         <!-- <a href="service.html" class="nav-item nav-link">Service</a> -->
                         <!-- <a href="blog.html" class="nav-item nav-link">Blog</a> -->

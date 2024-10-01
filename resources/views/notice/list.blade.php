@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 @include('layouts.head')
+<x-head.tinymce-config/>
 </head>
 <body>
 @include('layouts.header')
@@ -34,6 +35,8 @@
           @endforeach
         </tbody>
       </table>
+
+      {{ $notices->links('pagination::bootstrap-4') }}
       @can('notice')
       <a href="notice/create" class="btn btn-secondary float-end">글쓰기</a>
       @endcan

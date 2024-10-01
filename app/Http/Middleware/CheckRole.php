@@ -22,6 +22,6 @@ class CheckRole
             return $next($request);
         }
 
-        return redirect('/')->with('error', 'You do not have permission to access this page.');
+        return redirect('/')->with('error', '이 페이지에 액세스할 수 있는 권한이 없습니다.');
     }
 }
