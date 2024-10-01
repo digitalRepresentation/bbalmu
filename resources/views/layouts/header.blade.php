@@ -39,10 +39,10 @@
                         </div> --}}
                         <a href="/tiers" class="nav-item nav-link">3040티어</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">ELO시스템</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">감독전</a>
                             <div class="dropdown-menu m-0">
-                                {{-- <a href="/notice" class="dropdown-item">ELO공지</a> --}}
-                                <a href="/elo/stats" class="dropdown-item">전적확인</a>
+                                <a href="/elo/stats" class="dropdown-item">ELO점수</a>
+                                <a href="/elo/stats" class="dropdown-item">감독전승률</a>
                             </div>
                         </div>
                         <div class="nav-item dropdown">
@@ -55,11 +55,11 @@
                             </div>
                         </div>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">좀비래더</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">내전래더</a>
                             <div class="dropdown-menu m-0">
                                 <a href="/ladder/notice" class="dropdown-item">래더공지</a>
                                 <a href="/ladder/match-record" class="dropdown-item">점수기록지</a>
-                                <a href="/ladder/tiers" class="dropdown-item">래더티어</a>
+                                <a href="/ladder/tiers" class="dropdown-item">래더점수</a>
                             </div>
                         </div>
                         
@@ -92,7 +92,7 @@
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
                     
-                    {{-- <a href="{{ route('profile.edit') }}" class="text-sm text-gray-700 underline">마이페이지</a> --}}
+                    
                     
                     <form method="POST" action="{{ route('logout') }}">
                         <span>{{ Auth::user()->name }}님 환영합니다.</span>
@@ -103,7 +103,11 @@
                                             this.closest('form').submit();">
                             {{ __('로그아웃') }}
                         </x-dropdown-link>
+
+                        <a href="{{ route('profile.edit') }}" class="text-sm text-gray-700 underline">마이페이지</a>
                     </form>
+
+                    
                         
                     @else
                         <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">로그인</a>

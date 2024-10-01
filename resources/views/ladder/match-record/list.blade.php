@@ -42,7 +42,7 @@
         </tbody>
       </table>
       {{ $matchRecords->links('pagination::bootstrap-4') }}
-      @can('notice')
+      @can('ladder')
       <a href="/ladder/match-record/create" class="btn btn-secondary float-end">래더기록작성</a>
       @endcan
   </section>    

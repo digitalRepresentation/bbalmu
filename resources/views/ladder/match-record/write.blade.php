@@ -20,7 +20,7 @@
       @csrf
       <label for="title" class="form-label">rep파일 업로드</label>
       <input type="file" id="fileInput" name="rep_file" accept=".rep" required>
-      @can('notice')
+      @can('ladder')
       <input type="submit" class="btn btn-secondary float-end" value="전적기록" />
       @endcan
     </form>
